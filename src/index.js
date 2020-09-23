@@ -1,7 +1,13 @@
-import { saludar } from './js/componentes.js';
 import './styles.css';
+import { Todo } from './classes/todo.class.js';
+import {TodoList} from './classes/todo-list-class.js';
 
+const todoList = new TodoList();
 
-const nombre = 'Steven';
+const tarea = new Todo('Javascript');
+const tarea2 = new Todo('PHP');
 
-saludar( nombre );
+todoList.nuevoTodo(tarea);
+todoList.nuevoTodo(tarea2);
+
+console.log(todoList);
