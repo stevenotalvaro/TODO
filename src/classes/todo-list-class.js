@@ -2,15 +2,12 @@ import { Todo } from "./todo.class";
 
 export class TodoList{
     constructor(){
-
-        // this.todos = [];
         this.cargarLocalStorage();
     }
 
     nuevoTodo(todo){
         this.todos.push(todo);
         this.guardarLocalStorage();
-
     }
 
     eliminarTodo (id){
