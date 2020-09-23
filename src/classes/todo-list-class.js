@@ -21,6 +21,6 @@ export class TodoList{
     }
 
     elimiarCompletados(){
-
+        this.todos = this.todos.filter(todo => !todo.completado)
     }
 }
